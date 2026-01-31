@@ -22,10 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             No fluff. Just results.
           </p>
           <div className="flex gap-4">
-            <a href="#" className="p-3 rounded-xl bg-white/5 hover:bg-brand-cyan/20 hover:text-brand-cyan transition-all border border-white/5 group">
-              <Linkedin size={20} className="group-hover:scale-110 transition-transform"/>
-            </a>
-            <a href="mailto:contact@example.com" className="p-3 rounded-xl bg-white/5 hover:bg-brand-cyan/20 hover:text-brand-cyan transition-all border border-white/5 group">
+            <a href="mailto:rishabhar1974@gmail.com" className="p-3 rounded-xl bg-white/5 hover:bg-brand-cyan/20 hover:text-brand-cyan transition-all border border-white/5 group">
               <Mail size={20} className="group-hover:scale-110 transition-transform"/>
             </a>
           </div>
