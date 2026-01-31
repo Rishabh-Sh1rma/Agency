@@ -31,7 +31,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           </div>
           
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-8 leading-[1.05] drop-shadow-2xl">
-            Get Qualified Sales Calls <br className="hidden md:block"/> in 30 Days — Or <br />
+            Get Qualified Sales Calls <br className="hidden md:block"/> in 90 Days — Or <br />
             <span className="text-transparent bg-clip-text bg-cyber-gradient relative">
                I Work For Free
                <svg className="absolute w-full h-3 -bottom-1 left-0 text-brand-cyan opacity-50" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00026 6.99997C35.9172 3.86908 123.978 -1.22915 197.986 2.07347" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg>
@@ -39,7 +39,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           </h1>
           
           <p className="text-lg md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed font-light">
-            Predictable lead generation systems for Indian businesses. <br className="hidden md:block" /> Scalable frameworks designed for growth-focused partners.
+            Predictable high-intent call generation systems for Indian service businesses & B2B companies. <br className="hidden md:block" /> Scalable frameworks designed for growth-focused partners.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -90,7 +90,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           <Quote className="absolute top-8 left-8 text-brand-cyan/10 w-16 h-16 transform -scale-x-100" />
           
           <p className="text-2xl md:text-3xl font-medium text-slate-100 leading-relaxed relative z-10">
-            "I help businesses build a predictable lead generation system that books qualified sales calls in 30 days, backed by a minimum-call guarantee. If we don’t hit the target, I work for free until we do."
+            "I help Indian service businesses & B2B companies build a predictable lead generation system that books qualified sales calls in 90 days, backed by a minimum-call guarantee. If we don’t hit the target, I work for free until we do."
           </p>
         </div>
       </section>
