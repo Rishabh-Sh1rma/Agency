@@ -149,7 +149,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
             <div className="text-center md:text-left">
               <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">The Performance Commitment</h2>
               <p className="text-slate-300 text-xl leading-relaxed">
-                If we don’t generate the agreed number of qualified sales calls in 30 days, I continue working for <span className="text-brand-green font-bold underline decoration-brand-green decoration-2 underline-offset-4">free</span> until the target is achieved. No excuses.
+                If we don’t generate the agreed number of qualified sales calls in 90 days, I continue working for <span className="text-brand-green font-bold underline decoration-brand-green decoration-2 underline-offset-4">free</span> until the target is achieved. No excuses.
               </p>
             </div>
           </div>
