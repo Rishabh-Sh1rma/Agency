@@ -90,7 +90,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           <Quote className="absolute top-8 left-8 text-brand-cyan/10 w-16 h-16 transform -scale-x-100" />
           
           <p className="text-2xl md:text-3xl font-medium text-slate-100 leading-relaxed relative z-10">
-            "I help Indian service businesses & B2B companies build a predictable lead generation system that books qualified sales calls in 90 days, backed by a minimum-call guarantee. If we don’t hit the target, I work for free until we do."
+            "I help Indian service businesses & B2B companies build a predictable lead generation system that books qualified calls and high-ticket clients in 90 days, backed by a minimum-call guarantee. If we don’t hit the target, I work for free until we do."
           </p>
         </div>
       </section>
