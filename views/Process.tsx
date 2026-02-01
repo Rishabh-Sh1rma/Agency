@@ -18,7 +18,7 @@ export const Process: React.FC<ProcessProps> = ({ onNavigate }) => {
     {
       number: '02',
       title: 'System Build',
-      description: 'We construct the infrastructure: landing pages, tracking pixels, CRM integrations, and lead capture funnels. This is the engine that processes traffic into qualified appointments.',
+      description: 'We construct the infrastructure: automated call booking, tracking pixels, CRM integrations, qualification logic, lead capture funnels. This is the engine that processes traffic into qualified appointments so you only talk to people who are ready to buy.',
       icon: 'cpu'
     },
     {
