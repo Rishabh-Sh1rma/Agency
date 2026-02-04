@@ -1,6 +1,6 @@
 import React from 'react';
 import { Page } from '../types';
-import { ArrowRight, CheckCircle2, TrendingUp, Phone, ShieldCheck, Users, Quote, Activity, BarChart2, Radio, Target } from 'lucide-react';
+import { ArrowRight, CheckCircle2, TrendingUp, Phone, ShieldCheck, Users, Quote, Activity, BarChart2, Radio, Target, Filter, ArrowDown } from 'lucide-react';
 import { FAQ } from '../components/FAQ';
 
 interface HomeProps {
@@ -133,51 +133,140 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-     {/* Guarantee Section */}
-<section className="max-w-5xl mx-auto px-4 reveal-on-scroll">
-  <div className="glass-panel rounded-[3rem] p-10 md:p-16 border-brand-green/20 relative overflow-hidden">
-    
-    {/* Animated Background Mesh */}
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-green/10 via-transparent to-transparent opacity-50"></div>
-    
-    <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
-      
-      <div className="flex-shrink-0 relative">
-        <div className="absolute inset-0 bg-brand-green blur-[40px] opacity-20 animate-pulse-slow"></div>
-        <div className="relative p-8 bg-brand-green/10 rounded-3xl border border-brand-green/30 shadow-2xl shadow-brand-green/10">
-          <ShieldCheck className="w-20 h-20 text-brand-green" />
+      {/* Guarantee Section */}
+      <section className="max-w-5xl mx-auto px-4 reveal-on-scroll">
+        <div className="glass-panel rounded-[3rem] p-10 md:p-16 border-brand-green/20 relative overflow-hidden">
+          {/* Animated Background Mesh */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-green/10 via-transparent to-transparent opacity-50"></div>
+          
+          <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
+            <div className="flex-shrink-0 relative">
+              <div className="absolute inset-0 bg-brand-green blur-[40px] opacity-20 animate-pulse-slow"></div>
+              <div className="relative p-8 bg-brand-green/10 rounded-3xl border border-brand-green/30 shadow-2xl shadow-brand-green/10">
+                <ShieldCheck className="w-20 h-20 text-brand-green" />
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Our Guarantee</h2>
+              <p className="text-slate-300 text-xl leading-relaxed mb-8">
+                 <span className="text-white font-bold">Qualified Appointments in 90 Days</span> or we continue working at <span className="text-brand-green font-bold">no cost</span> until the target is reached.
+              </p>
+
+              <div className="text-left bg-black/20 p-8 rounded-3xl border border-white/5 inline-block w-full">
+                <p className="text-brand-green text-xs font-bold uppercase tracking-widest mb-4 flex items-center gap-2"><CheckCircle2 size={14}/> This guarantee is possible because:</p>
+                <ul className="grid sm:grid-cols-2 gap-y-4 gap-x-8 text-slate-300">
+                   <li className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-cyan mt-2.5"></div>
+                      <span>Outreach volume is controlled</span>
+                   </li>
+                   <li className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-cyan mt-2.5"></div>
+                      <span>Qualification before calendar access</span>
+                   </li>
+                   <li className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-cyan mt-2.5"></div>
+                      <span>System is reviewed weekly</span>
+                   </li>
+                   <li className="flex items-start gap-3">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-cyan mt-2.5"></div>
+                      <span>No lead dilution. No excuses.</span>
+                   </li>
+                </ul>
+             </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="text-center md:text-left">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-          The Performance Guarantee
-        </h2>
-        
-        <p className="text-slate-300 text-xl leading-relaxed mb-6">
-          If we don’t deliver the agreed number of{" "}
-          <span className="text-brand-green font-bold underline decoration-brand-green decoration-2 underline-offset-4">
-            qualified appointments
-          </span>{" "}
-          within 90 days, we continue working at{" "}
-          <span className="text-brand-green font-bold">
-            zero cost
-          </span>{" "}
-          until the target is reached.
-        </p>
+      {/* Conversion Logic Section */}
+      <section className="max-w-6xl mx-auto px-4 py-10 md:py-20 reveal-on-scroll">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Conversion Logic</h2>
+          <p className="text-slate-400 max-w-2xl mx-auto text-lg">Conservative planning assumptions observed across multiple client cohorts.</p>
+        </div>
 
-        <ul className="text-slate-300 text-lg space-y-3">
-          <li>• Outreach volume is fully controlled</li>
-          <li>• Qualification happens before calendar access</li>
-          <li>• Weekly system reviews & optimization</li>
-          <li>• No dilution of lead quality. No traffic-based excuses.</li>
-        </ul>
-      </div>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+           {/* Visual Funnel */}
+           <div className="space-y-2 relative max-w-md mx-auto w-full">
+              {/* Top Funnel */}
+              <div className="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-cyan/50 text-center relative z-10 w-full mx-auto shadow-lg hover:translate-y-[-2px] transition-transform">
+                  <h3 className="text-4xl font-bold text-white mb-1">1,800</h3>
+                  <p className="text-brand-cyan font-bold uppercase text-xs tracking-wider mb-2">Prospects Vetted (90 Days)</p>
+                  <p className="text-slate-400 text-sm">~20 Leads/Day via Forms & WhatsApp</p>
+              </div>
+              
+              {/* Arrow */}
+              <div className="flex justify-center py-1">
+                 <ArrowDown className="text-slate-600 animate-bounce" size={20} />
+              </div>
 
-    </div>
-  </div>
-</section>
+              {/* Middle Funnel */}
+              <div className="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-cyan/30 text-center relative z-10 w-[90%] mx-auto shadow-lg hover:translate-y-[-2px] transition-transform">
+                  <h3 className="text-4xl font-bold text-white mb-1">360</h3>
+                  <p className="text-brand-cyan font-bold uppercase text-xs tracking-wider mb-2">Conversations</p>
+                  <p className="text-slate-400 text-sm">20% Response Rate</p>
+              </div>
 
+              {/* Arrow */}
+              <div className="flex justify-center py-1">
+                 <ArrowDown className="text-slate-600 animate-bounce" size={20} />
+              </div>
+
+              {/* Bottom Funnel */}
+              <div className="glass-panel p-6 rounded-2xl border-t-4 border-t-brand-green text-center relative z-10 w-[80%] mx-auto bg-brand-green/5 shadow-[0_0_30px_rgba(16,185,129,0.1)] hover:translate-y-[-2px] transition-transform">
+                  <h3 className="text-4xl font-bold text-white mb-1">54</h3>
+                  <p className="text-brand-green font-bold uppercase text-xs tracking-wider mb-2">Calls Booked</p>
+                  <p className="text-slate-400 text-sm">15% Booking Rate</p>
+              </div>
+           </div>
+
+           {/* How It Works Text */}
+           <div className="space-y-8">
+              <div>
+                  <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                     <Filter className="text-brand-cyan" /> How This System Works
+                  </h3>
+                  <p className="text-slate-400 leading-relaxed mb-6 text-lg">
+                      Meta & WhatsApp campaigns are designed for <span className="text-white font-medium">high-intent actions only</span> — not just traffic. The system is built around:
+                  </p>
+                  <ul className="space-y-4">
+                      {[
+                          'Pre-qualification inside the form',
+                          'Instant WhatsApp follow-up',
+                          'Scripted human conversation flow',
+                          'Manual vetting before calendar access'
+                      ].map((item, i) => (
+                          <li key={i} className="flex items-center gap-4 text-slate-300 bg-white/5 p-4 rounded-xl border border-white/5">
+                              <div className="w-2 h-2 rounded-full bg-brand-cyan flex-shrink-0"></div>
+                              <span className="font-medium">{item}</span>
+                          </li>
+                      ))}
+                  </ul>
+              </div>
+              
+              <div className="p-8 bg-gradient-to-br from-brand-cyan/10 to-transparent rounded-2xl border border-brand-cyan/20 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 p-4 opacity-10">
+                     <Target size={100} />
+                  </div>
+                  <h4 className="text-brand-cyan font-bold text-sm uppercase tracking-wider mb-3 relative z-10">So instead of chasing volume...</h4>
+                  <p className="text-xl text-white font-bold leading-relaxed relative z-10">
+                      You get a predictable flow of sales-ready conversations.
+                  </p>
+              </div>
+
+              <div className="bg-white/5 p-6 rounded-xl border-l-4 border-brand-green">
+                  <h4 className="text-brand-green font-bold text-sm uppercase tracking-wider mb-2">In Simple Terms</h4>
+                  <p className="text-slate-300 text-lg">
+                      20 real leads a day → 50+ qualified calls in 90 days → consistent deal flow without burning ad budget.
+                  </p>
+              </div>
+
+              <p className="text-xs text-slate-500 italic border-t border-white/5 pt-4">
+                  * These are not best-case scenarios. They are conservative planning assumptions used to engineer predictable outcomes.
+              </p>
+           </div>
+        </div>
+      </section>
 
        {/* Power Quote */}
        <section className="max-w-4xl mx-auto py-20 px-4 reveal-on-scroll">
@@ -267,14 +356,6 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                 </div>
              </div>
         </div>
-      </section>
-
-      {/* The Framework (Simplified) */}
-      <section className="max-w-5xl mx-auto text-center py-10 px-4 reveal-on-scroll">
-        <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">The Framework Behind the Results</h2>
-        <p className="text-slate-400 text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-          Visibility drives outcomes. We turn paid demand into consistent, credibility-building pipelines that win trust, attract buyers, and fuel growth.
-        </p>
       </section>
 
       {/* FAQ Section */}
