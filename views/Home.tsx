@@ -31,7 +31,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
           </div>
           
           <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-8 leading-[1.05] drop-shadow-2xl">
-            Get Qualified Sales Calls <br className="hidden md:block"/> in 90 Days — Or <br />
+            Get Qualified Sales Appointments <br className="hidden md:block"/> in 90 Days — Or <br />
             <span className="text-transparent bg-clip-text bg-cyber-gradient relative">
                I Work For Free
                <svg className="absolute w-full h-3 -bottom-1 left-0 text-brand-cyan opacity-50" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00026 6.99997C35.9172 3.86908 123.978 -1.22915 197.986 2.07347" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/></svg>
@@ -133,28 +133,51 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         </div>
       </section>
 
-      {/* Guarantee Section */}
-      <section className="max-w-5xl mx-auto px-4 reveal-on-scroll">
-        <div className="glass-panel rounded-[3rem] p-10 md:p-16 border-brand-green/20 relative overflow-hidden">
-          {/* Animated Background Mesh */}
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-green/10 via-transparent to-transparent opacity-50"></div>
-          
-          <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
-            <div className="flex-shrink-0 relative">
-              <div className="absolute inset-0 bg-brand-green blur-[40px] opacity-20 animate-pulse-slow"></div>
-              <div className="relative p-8 bg-brand-green/10 rounded-3xl border border-brand-green/30 shadow-2xl shadow-brand-green/10">
-                <ShieldCheck className="w-20 h-20 text-brand-green" />
-              </div>
-            </div>
-            <div className="text-center md:text-left">
-              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">The Performance Commitment</h2>
-              <p className="text-slate-300 text-xl leading-relaxed">
-                If we don’t generate the agreed number of qualified sales calls in 90 days, I continue working for <span className="text-brand-green font-bold underline decoration-brand-green decoration-2 underline-offset-4">free</span> until the target is achieved. No excuses.
-              </p>
-            </div>
-          </div>
+     {/* Guarantee Section */}
+<section className="max-w-5xl mx-auto px-4 reveal-on-scroll">
+  <div className="glass-panel rounded-[3rem] p-10 md:p-16 border-brand-green/20 relative overflow-hidden">
+    
+    {/* Animated Background Mesh */}
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-green/10 via-transparent to-transparent opacity-50"></div>
+    
+    <div className="relative z-10 flex flex-col md:flex-row items-center gap-12">
+      
+      <div className="flex-shrink-0 relative">
+        <div className="absolute inset-0 bg-brand-green blur-[40px] opacity-20 animate-pulse-slow"></div>
+        <div className="relative p-8 bg-brand-green/10 rounded-3xl border border-brand-green/30 shadow-2xl shadow-brand-green/10">
+          <ShieldCheck className="w-20 h-20 text-brand-green" />
         </div>
-      </section>
+      </div>
+
+      <div className="text-center md:text-left">
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+          The Performance Guarantee
+        </h2>
+        
+        <p className="text-slate-300 text-xl leading-relaxed mb-6">
+          If we don’t deliver the agreed number of{" "}
+          <span className="text-brand-green font-bold underline decoration-brand-green decoration-2 underline-offset-4">
+            qualified appointments
+          </span>{" "}
+          within 90 days, we continue working at{" "}
+          <span className="text-brand-green font-bold">
+            zero cost
+          </span>{" "}
+          until the target is reached.
+        </p>
+
+        <ul className="text-slate-300 text-lg space-y-3">
+          <li>• Outreach volume is fully controlled</li>
+          <li>• Qualification happens before calendar access</li>
+          <li>• Weekly system reviews & optimization</li>
+          <li>• No dilution of lead quality. No traffic-based excuses.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
        {/* Power Quote */}
        <section className="max-w-4xl mx-auto py-20 px-4 reveal-on-scroll">
